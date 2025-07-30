@@ -360,6 +360,57 @@ body {
     width: auto;
 }
 
+/* Modern App Store Button */
+.app-store-btn-modern {
+    display: inline-flex;
+    align-items: center;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-store-btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: #1a1a1a;
+}
+
+.app-store-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.apple-logo {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.app-store-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.download-label {
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.store-name {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
 .version-info {
     color: var(--text-secondary);
 }
