@@ -327,6 +327,19 @@ body {
     box-shadow: 0 10px 30px var(--shadow);
 }
 
+.screenshot-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.screenshot-image:hover {
+    transform: scale(1.02);
+}
+
 .screenshot-item p {
     color: var(--text-secondary);
     font-weight: 500;
