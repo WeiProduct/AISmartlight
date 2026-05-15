@@ -1,6 +1,14 @@
-// Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scroll for anchor links
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+        document.body.classList.add('no-motion');
+    }
+
+    const currentYear = document.getElementById('currentYear');
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+
     const links = document.querySelectorAll('a[href^="#"]');
     
     links.forEach(link => {
@@ -16,24 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 window.scrollTo({
                     top: targetPosition,
-                    behavior: 'smooth'
+                    behavior: prefersReducedMotion ? 'auto' : 'smooth'
                 });
             }
         });
     });
 
-    // Header background on scroll
     const header = document.querySelector('.header');
+    const updateHeader = () => {
+        if (!header) return;
+        header.classList.toggle('is-scrolled', window.scrollY > 50);
+    };
     
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.8)';
-        }
-    });
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
 
-    // Animate elements on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -42,23 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('is-visible');
             }
         });
     }, observerOptions);
 
-    // Observe feature cards and use cases
     const animateElements = document.querySelectorAll('.feature-card, .use-case, .screenshot-item');
     
     animateElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        element.classList.add('reveal');
         observer.observe(element);
     });
 
-    // Add stagger animation delay
     const featureCards = document.querySelectorAll('.feature-card');
     featureCards.forEach((card, index) => {
         card.style.transitionDelay = `${index * 0.1}s`;
@@ -74,9 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
         screenshot.style.transitionDelay = `${index * 0.1}s`;
     });
 
-    // Phone mockup animation
     const phoneMockup = document.querySelector('.phone-mockup');
-    if (phoneMockup) {
+    if (phoneMockup && !prefersReducedMotion) {
         phoneMockup.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) rotateY(5deg)';
         });
@@ -86,9 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Color cycling animation for phone screen
     const phoneScreen = document.querySelector('.phone-screen');
-    if (phoneScreen) {
+    if (phoneScreen && !prefersReducedMotion) {
         const colors = [
             'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
             'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',

@@ -2,7 +2,7 @@
 
 Professional website for the Smart Light Assistant iOS app - a photography lighting tool that transforms your phone screen into a fill light.
 
-## 🌟 Features
+## Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Modern UI**: Clean, professional design with smooth animations
@@ -10,7 +10,7 @@ Professional website for the Smart Light Assistant iOS app - a photography light
 - **Fast Loading**: Optimized CSS and JavaScript for quick page loads
 - **Accessibility**: WCAG compliant with proper ARIA labels and keyboard navigation
 
-## 📁 File Structure
+## File Structure
 
 ```
 website/
@@ -22,7 +22,7 @@ website/
 └── README.md           # This file
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### GitHub Pages
 1. Push this repository to GitHub
@@ -43,7 +43,7 @@ This is a static website that can be deployed to:
 - AWS S3: Upload files to an S3 bucket with static hosting
 - Any web hosting service that supports static files
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 Edit the CSS variables in `styles.css`:
@@ -63,7 +63,7 @@ Edit the CSS variables in `styles.css`:
 ### App Store Links
 Update the App Store link in the download section when your app is published.
 
-## 📱 App Store Integration
+## App Store Integration
 
 The website includes:
 - App Store badge (update with actual link when published)
@@ -71,7 +71,7 @@ The website includes:
 - Feature descriptions matching the app functionality
 - Privacy policy and terms of service pages
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Browser Support
 - Chrome 80+
@@ -80,12 +80,12 @@ The website includes:
 - Edge 80+
 
 ### Performance
-- Minimal external dependencies (only Google Fonts)
+- No external runtime dependencies
 - Optimized images and assets
 - CSS and JavaScript minification ready
 - Lazy loading for images (implement if adding actual screenshots)
 
-## 📄 Legal Pages
+## Legal Pages
 
 The website includes template legal pages:
 - **Privacy Policy**: Covers app permissions and data handling
@@ -93,7 +93,7 @@ The website includes template legal pages:
 
 Update these with your specific legal requirements and jurisdiction.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch
@@ -101,15 +101,15 @@ Update these with your specific legal requirements and jurisdiction.
 4. Push to the branch
 5. Create a Pull Request
 
-## 📞 Support
+## Support
 
 For questions about the website:
-- Email: support@weiproduct.com
+- Email: 1597498880weiproduct@gmail.com
 - GitHub Issues: [Create an issue](https://github.com/WeiProduct/AISmartlight/issues)
 
-## 📝 License
+## License
 
-© 2025 Wei Fu. All rights reserved.
+© 2026 WeiProduct. All rights reserved.
 
 ---
 
