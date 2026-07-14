@@ -1,228 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Light Assistant - Professional Photography Lighting Tool</title>
-    <meta name="description" content="Transform your phone screen into a professional fill light. Perfect for photography, video recording, and live streaming with customizable colors and brightness.">
+    <meta name="theme-color" content="#2563EB" id="themeColorMeta">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#111827">
-    <link rel="canonical" href="https://weiproduct.github.io/AISmartlight/">
+    <title>智能补光师 - AI 智能补光灯 | AI Smart Light</title>
+    <meta name="description" content="把 iPhone 或 iPad 变成专业补光灯。AI 场景预设、精准色温（2700K–6500K）与色环、分屏双色、内置相机拍摄，适合人像、产品与直播。数据全本地。">
+    <meta property="og:title" content="智能补光师 | AI Smart Light">
+    <meta property="og:description" content="一块屏幕，一束好光。AI 场景预设、精准色温与色环、分屏双色，随手打出专业级补光。">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="WeiProduct">
-    <meta property="og:title" content="Smart Light Assistant - Professional Photography Lighting Tool">
-    <meta property="og:description" content="Turn your iPhone or iPad into a precise fill light with color presets, split lighting, and camera preview for creators.">
     <meta property="og:url" content="https://weiproduct.github.io/AISmartlight/">
-    <meta property="og:image" content="https://weiproduct.github.io/AISmartlight/images/screenshot-2.png">
+    <meta property="og:image" content="https://weiproduct.github.io/AISmartlight/images/og-image.png">
+    <meta property="og:site_name" content="WeiProduct">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Smart Light Assistant">
-    <meta name="twitter:description" content="A practical iOS fill-light tool for photography, video, streaming, and product shoots.">
-    <meta name="twitter:image" content="https://weiproduct.github.io/AISmartlight/images/screenshot-2.png">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:title" content="智能补光师 | AI Smart Light">
+    <meta name="twitter:description" content="Turn your iPhone into a pro fill light — AI scene presets, precise Kelvin, a color wheel, and split-screen dual color.">
+    <meta name="twitter:image" content="https://weiproduct.github.io/AISmartlight/images/og-image.png">
+    <link rel="canonical" href="https://weiproduct.github.io/AISmartlight/">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiproduct.github.io/AISmartlight/">
+    <link rel="alternate" hreflang="en" href="https://weiproduct.github.io/AISmartlight/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563EB'/%3E%3Cstop offset='.54' stop-color='%237C3AED'/%3E%3Cstop offset='1' stop-color='%23F97316'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='50' r='14' fill='white'/%3E%3Cg stroke='white' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M50 15V27'/%3E%3Cpath d='M50 73V85'/%3E%3Cpath d='M15 50H27'/%3E%3Cpath d='M73 50H85'/%3E%3Cpath d='M25 25 33 33'/%3E%3Cpath d='M67 67 75 75'/%3E%3Cpath d='M75 25 67 33'/%3E%3Cpath d='M33 67 25 75'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563EB'/%3E%3Cstop offset='.54' stop-color='%237C3AED'/%3E%3Cstop offset='1' stop-color='%23F97316'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='50' r='14' fill='white'/%3E%3Cg stroke='white' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M50 15V27'/%3E%3Cpath d='M50 73V85'/%3E%3Cpath d='M15 50H27'/%3E%3Cpath d='M73 50H85'/%3E%3Cpath d='M25 25 33 33'/%3E%3Cpath d='M67 67 75 75'/%3E%3Cpath d='M75 25 67 33'/%3E%3Cpath d='M33 67 25 75'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Smart Light Assistant",
-        "alternateName": "智能补光师",
-        "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "iOS, iPadOS",
-        "description": "A mobile fill-light app for photography and video creators, with adjustable colors, split-screen lighting, and camera preview.",
-        "url": "https://weiproduct.github.io/AISmartlight/",
-        "downloadUrl": "https://apps.apple.com/app/id6749024443",
-        "image": "https://weiproduct.github.io/AISmartlight/images/screenshot-2.png",
-        "creator": {
-            "@type": "Organization",
-            "name": "WeiProduct",
-            "url": "https://weiproduct.com/"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        }
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "智能补光师",
+      "alternateName": "AI Smart Light",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "iOS 18.5+",
+      "url": "https://weiproduct.github.io/AISmartlight/",
+      "image": "https://weiproduct.github.io/AISmartlight/images/og-image.png",
+      "downloadUrl": "https://apps.apple.com/app/id6749024443",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@type": "Organization", "name": "WeiProduct", "url": "https://weiproduct.com/" },
+      "description": "把 iPhone 或 iPad 变成专业补光灯，支持 AI 场景预设、精准色温与色环、分屏双色和内置相机拍摄，数据全本地。"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "它真的能当补光灯用吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。屏幕会发出明亮、均匀、可调色的光，你可以把它对准拍摄对象作为柔和的补光或主光。" } },
+        { "@type": "Question", "name": "能调到指定的色温吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。从暖调钨丝光 2700K 到冷调日光 6500K 之间任意拨动，或用完整色环选取任意颜色。" } },
+        { "@type": "Question", "name": "AI 场景预设是什么？", "acceptedAnswer": { "@type": "Answer", "text": "针对人像、产品、直播等常见场景调好的一键光效，无需手动调节即可获得讨喜的光线。" } },
+        { "@type": "Question", "name": "可以在 App 内直接拍摄吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。内置相机让你边补光边预览，直接拍摄照片、Live Photo 和视频。" } },
+        { "@type": "Question", "name": "我的数据安全吗？", "acceptedAnswer": { "@type": "Answer", "text": "一切都在设备本地运行。没有账号、没有云端、没有追踪；相机仅用于实时预览和你主动拍下的画面。" } }
+      ]
     }
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <div class="logo"></div>
-                <span class="brand-name">Smart Light Assistant</span>
-            </div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#screenshots">Screenshots</a>
-                <a href="https://apps.apple.com/app/id6749024443" target="_blank" rel="noopener noreferrer">Download</a>
-            </div>
-        </nav>
-    </header>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Studio lighting<br>in your pocket</h1>
-            <p class="hero-subtitle">Use your iPhone or iPad as a precise fill light with adjustable color, brightness, and camera preview.</p>
-            <div class="hero-buttons">
-                <a href="https://apps.apple.com/app/id6749024443" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download on App Store</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="nav-brand" href="#" aria-label="AI Smart Light">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563EB"/><stop offset=".54" stop-color="#7C3AED"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg)"/><circle cx="50" cy="50" r="14" fill="#fff"/><g stroke="#fff" stroke-width="6" stroke-linecap="round"><path d="M50 15V27"/><path d="M50 73V85"/><path d="M15 50H27"/><path d="M73 50H85"/><path d="M25 25 33 33"/><path d="M67 67 75 75"/><path d="M75 25 67 33"/><path d="M33 67 25 75"/></g></svg>
+                </span>
+                <span class="brand-name" data-i18n="navBrand">AI 智能补光</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#how" class="nav-link" data-i18n="navHow">使用流程</a>
+                <a href="#features" class="nav-link" data-i18n="navFeatures">功能特点</a>
+                <a href="#screenshots" class="nav-link" data-i18n="navScreenshots">应用截图</a>
+                <a href="#faq" class="nav-link" data-i18n="navFaq">常见问题</a>
+                <button class="icon-btn" type="button" id="themeToggle" aria-label="切换深色模式">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">EN</button>
+                <a href="https://apps.apple.com/app/id6749024443" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer" data-i18n="navGet">获取 App</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img class="hero-screenshot" src="images/screenshot-4.png" alt="Smart Light Assistant color wheel — adjustable fill-light color and brightness" width="1290" height="2796">
+    </nav>
+
+    <main id="main">
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow" data-i18n="heroEyebrow">✦ AI 智能补光</span>
+                <h1 class="hero-title" data-i18n="heroTitle">把 iPhone 变成专业补光灯</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">一块屏幕，一束好光。AI 场景预设、精准色温与色环、分屏双色，随手打出专业级补光。</p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/id6749024443" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg class="apple-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span data-i18n="downloadBtn">App Store 下载</span>
+                    </a>
+                    <a href="#how" class="btn btn-secondary" data-i18n="learnMore">了解更多</a>
+                </div>
+                <ul class="hero-trust">
+                    <li data-i18n="trust1">🔆 全屏柔光</li>
+                    <li data-i18n="trust2">🎨 精准色温</li>
+                    <li data-i18n="trust3">🔒 数据全本地</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <div class="light-demo" role="group" aria-label="Interactive fill-light preview">
+                    <div class="device-notch" aria-hidden="true"></div>
+                    <div class="ld-screen" id="ldScreen">
+                        <div class="ld-glow" id="ldGlow" aria-hidden="true"></div>
+                        <div class="ld-readout">
+                            <span class="ld-kelvin" id="ldKelvin">4500K</span>
+                            <span class="ld-scene" id="ldSceneLabel" data-i18n="sceneNeutral">中性白光</span>
+                        </div>
+                        <span class="ld-badge" data-i18n="ldBadge">实时预览</span>
+                    </div>
+                    <div class="ld-controls">
+                        <div class="ld-scenes" role="group" aria-label="scene presets">
+                            <button type="button" class="ld-chip" data-kelvin="3200" data-scene="scenePortrait" data-i18n="scenePortrait">人像</button>
+                            <button type="button" class="ld-chip" data-kelvin="5000" data-scene="sceneProduct" data-i18n="sceneProduct">产品</button>
+                            <button type="button" class="ld-chip" data-kelvin="5600" data-scene="sceneStream" data-i18n="sceneStream">直播</button>
+                        </div>
+                        <div class="ld-slider-row">
+                            <span class="ld-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></span>
+                            <input type="range" id="ldSlider" class="ld-slider" min="2700" max="6500" step="50" value="4500" aria-label="Color temperature in Kelvin">
+                            <span class="ld-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg></span>
+                        </div>
+                        <div class="ld-slider-caption"><span data-i18n="ldWarm">钨丝暖光 2700K</span><span data-i18n="ldCool">日光冷白 6500K</span></div>
+                    </div>
+                </div>
+                <div class="hero-chip chip-a" data-i18n="chipA">🔆 屏幕补光</div>
+                <div class="hero-chip chip-b" data-i18n="chipB">🎬 拍照 · 录像</div>
+            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <section class="proof" aria-label="trust">
+        <div class="container proof-row">
+            <div class="proof-rating">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <div class="proof-sub"><strong>App Store</strong><span data-i18n="proofRating">摄影与录像 · 实用工具</span></div>
+            </div>
+            <div class="proof-stats">
+                <div class="stat"><strong>iOS 18.5+</strong><span data-i18n="stat1">原生体验</span></div>
+                <div class="stat"><strong>100%</strong><span data-i18n="stat2">本地隐私</span></div>
+                <div class="stat"><strong>EN / 中文</strong><span data-i18n="stat3">双语界面</span></div>
+                <div class="stat"><strong>0</strong><span data-i18n="stat4">广告 · 追踪</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howTitle">三步打出好光</h2>
+            <p class="section-sub" data-i18n="howSub">选好场景，摆好设备，随手就拍。</p>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-badge">1</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h7M15 18h5"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="13" cy="18" r="2"/></svg></div>
+                    <h3 data-i18n="step1Title">选场景或让 AI 定光</h3>
+                    <p data-i18n="step1Desc">打开 App，选择人像 / 产品 / 直播场景与 AI 预设，或直接拨到精确色温。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">2</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3.5" width="7" height="17" rx="2"/><path d="M3 8l2 1M3 12h2M3 16l2-1M21 8l-2 1M21 12h-2M21 16l-2-1"/></svg></div>
+                    <h3 data-i18n="step2Title">把 iPhone 当补光灯</h3>
+                    <p data-i18n="step2Desc">把手机或 iPad 摆到需要补光的位置，整块屏幕即化为柔和均匀的光源。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">3</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.2l1-1.6A1.5 1.5 0 0 1 9.9 3.7h4.2c.5 0 1 .27 1.27.7l1 1.6h1.1A2.5 2.5 0 0 1 20.5 8.5v9A2.5 2.5 0 0 1 18 20H5.5A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.4"/></svg></div>
+                    <h3 data-i18n="step3Title">实时预览并拍摄</h3>
+                    <p data-i18n="step3Desc">用内置相机边补光边预览，直接拍照片、Live Photo 或录像。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Powerful Features for Creative Professionals</h2>
+            <h2 class="section-title" data-i18n="featuresTitle">核心功能</h2>
+            <p class="section-sub" data-i18n="featuresSub">专为创作者的用光而设计的每一个细节。</p>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Light</div>
-                    <h3>Screen Fill Light</h3>
-                    <p>Convert your device screen into a professional-grade fill light with adjustable intensity and color temperature.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg></div>
+                    <h3 data-i18n="feature1Title">全屏补光灯</h3>
+                    <p data-i18n="feature1Desc">把设备屏幕变成专业补光灯，亮度与色温自由可调，光线柔和均匀。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Color</div>
-                    <h3>Custom Color Wheel</h3>
-                    <p>360-degree color control with precision saturation and brightness adjustments for perfect lighting effects.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.3L18 9l-4.1 1.7L12 15l-1.9-4.3L6 9l4.1-1.7z"/><path d="M18.5 14.5l.8 1.9 1.9.8-1.9.8-.8 1.9-.8-1.9-1.9-.8 1.9-.8z"/></svg></div>
+                    <h3 data-i18n="feature2Title">AI 场景预设</h3>
+                    <p data-i18n="feature2Desc">人像、产品、直播等一键预设，AI 帮你调好色温与色调，无需手动微调。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Split</div>
-                    <h3>Split Screen Mode</h3>
-                    <p>Display different colors on upper and lower screen sections to create professional dual-color lighting setups.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H16a5 5 0 0 0 5-5c0-3.9-4-6.5-9-6.5z"/><circle cx="7.5" cy="12" r="1"/><circle cx="10" cy="7.8" r="1"/><circle cx="14.5" cy="7.8" r="1"/><circle cx="17" cy="12" r="1"/></svg></div>
+                    <h3 data-i18n="feature3Title">色环与色温</h3>
+                    <p data-i18n="feature3Desc">360° 色环搭配饱和度控制，从 2700K 暖光到 6500K 冷白，精准命中每一种色调。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Lens</div>
-                    <h3>Real-time Preview</h3>
-                    <p>See your lighting effects instantly with built-in camera preview and capture capabilities.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 12h17"/></svg></div>
+                    <h3 data-i18n="feature4Title">分屏双色模式</h3>
+                    <p data-i18n="feature4Desc">屏幕上下分区显示不同颜色，一台设备即可打出双色布光效果。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Tone</div>
-                    <h3>20+ Color Presets</h3>
-                    <p>Professional color temperature presets including warm, cool, daylight, and creative color options.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.2l1-1.6A1.5 1.5 0 0 1 9.9 3.7h4.2c.5 0 1 .27 1.27.7l1 1.6h1.1A2.5 2.5 0 0 1 20.5 8.5v9A2.5 2.5 0 0 1 18 20H5.5A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.4"/></svg></div>
+                    <h3 data-i18n="feature5Title">相机与拍摄</h3>
+                    <p data-i18n="feature5Desc">内置实时相机预览，直接拍摄照片、Live Photo 与视频，所见即所得。</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">Film</div>
-                    <h3>Video & Photo Capture</h3>
-                    <p>Capture photos, videos, and Live Photos with perfect lighting directly within the app.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section class="use-cases">
-        <div class="container">
-            <h2 class="section-title">Perfect for Every Creative Scenario</h2>
-            <div class="use-cases-grid">
-                <div class="use-case">
-                    <h3>Portrait Photography</h3>
-                    <p>Achieve professional-quality portrait lighting with soft, even illumination that enhances facial features naturally.</p>
-                </div>
-                <div class="use-case">
-                    <h3>Product Photography</h3>
-                    <p>Highlight product details and textures with customizable lighting that eliminates harsh shadows and reflections.</p>
-                </div>
-                <div class="use-case">
-                    <h3>Video Content Creation</h3>
-                    <p>Maintain consistent, professional lighting throughout your video recordings with stable color temperature control.</p>
-                </div>
-                <div class="use-case">
-                    <h3>Live Streaming</h3>
-                    <p>Enhance your streaming setup with reliable, adjustable lighting that improves video quality and viewer engagement.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7 3v5c0 4.4-3 8.3-7 9.5-4-1.2-7-5.1-7-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3 data-i18n="feature6Title">隐私 · 双语</h3>
+                    <p data-i18n="feature6Desc">中英双语界面，无需账号、离线可用，相机仅用于本机预览，绝不上传。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
     <section id="screenshots" class="screenshots">
         <div class="container">
-            <h2 class="section-title">Intuitive Interface, Professional Results</h2>
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <img src="images/screenshot-2.png" alt="Smart Light Assistant main lighting control interface" class="screenshot-image" width="1290" height="2796" loading="lazy">
-                    <p>Clean, intuitive controls for quick lighting adjustments</p>
+            <h2 class="section-title" data-i18n="screenshotsTitle">应用截图</h2>
+            <p class="section-sub" data-i18n="screenshotsSub">左右滑动，点击可放大查看。</p>
+            <div class="gallery">
+                <button class="gal-arrow prev" type="button" aria-label="上一张" id="galPrev">‹</button>
+                <div class="gal-track" id="galTrack">
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-2.png" alt="全屏补光灯：整块屏幕发出均匀柔光" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot1">整屏柔光，随手补光</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-3.png" alt="AI 场景预设：人像、产品、直播等一键切换" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot2">AI 场景预设一键切换</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-4.png" alt="精准色环与色温调节" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot3">精准色环与色温</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-5.png" alt="分屏双色布光模式" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot4">分屏双色布光</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-6.png" alt="内置相机拍摄：照片、Live Photo、视频" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot5">内置相机边补光边拍</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-1.png" alt="中英双语，即开即用" width="560" height="1214" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot6">中英双语，即开即用</figcaption>
+                    </figure>
                 </div>
-                <div class="screenshot-item">
-                    <img src="images/screenshot-4.png" alt="Color wheel for precise lighting selection" class="screenshot-image" width="1290" height="2796" loading="lazy">
-                    <p>Precision color control with visual feedback</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screenshot-5.png" alt="Split screen dual color lighting mode" class="screenshot-image" width="1290" height="2796" loading="lazy">
-                    <p>Advanced dual-color lighting effects</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screenshot-6.png" alt="Camera preview with capture controls" class="screenshot-image" width="1290" height="2796" loading="lazy">
-                    <p>Real-time preview with capture capabilities</p>
-                </div>
+                <button class="gal-arrow next" type="button" aria-label="下一张" id="galNext">›</button>
+            </div>
+            <div class="gal-dots" id="galDots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container privacy-card">
+            <div class="privacy-lead">
+                <h2 data-i18n="privacyTitle">你的镜头，只属于你</h2>
+                <p data-i18n="privacyDesc">无需账号，无需云端，无任何追踪。相机仅用于本机实时预览，所有操作在设备本地完成。</p>
+            </div>
+            <ul class="privacy-points">
+                <li><span aria-hidden="true">📷</span><span data-i18n="pp1">相机仅本机预览</span></li>
+                <li><span aria-hidden="true">📶</span><span data-i18n="pp2">离线即可使用</span></li>
+                <li><span aria-hidden="true">🚫</span><span data-i18n="pp3">无任何追踪</span></li>
+                <li><span aria-hidden="true">🎯</span><span data-i18n="pp4">无广告 · 无账号</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
+            <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="q1">它真的能当补光灯用吗？</summary><p data-i18n="a1">可以。屏幕会发出明亮、均匀、可调色的光，你可以把它对准拍摄对象作为柔和的补光或主光。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q2">能调到指定的色温吗？</summary><p data-i18n="a2">可以。从暖调钨丝光 2700K 到冷调日光 6500K 之间任意拨动，或用完整色环选取任意颜色。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q3">AI 场景预设是什么？</summary><p data-i18n="a3">针对人像、产品、直播等常见场景调好的一键光效，无需手动调节即可获得讨喜的光线。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q4">可以在 App 内直接拍摄吗？</summary><p data-i18n="a4">可以。内置相机让你边补光边预览，直接拍摄照片、Live Photo 和视频。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q5">我的数据安全吗？</summary><p data-i18n="a5">一切都在设备本地运行。没有账号、没有云端、没有追踪；相机仅用于实时预览和你主动拍下的画面。</p></details>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2 class="section-title">Get Smart Light Assistant Today</h2>
-            <p class="download-subtitle">Available now on the App Store for iPhone and iPad</p>
-            <div class="download-buttons">
-                <a href="https://apps.apple.com/app/id6749024443" class="app-store-btn-modern" target="_blank" rel="noopener noreferrer">
-                    <div class="app-store-content">
-                        <svg class="apple-logo" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.02-1.77-.79-3.29-.79s-1.93.77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                        </svg>
-                        <div class="app-store-text">
-                            <span class="download-label">Download on the</span>
-                            <span class="store-name">App Store</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="download-qr">
-                <img src="images/qr-code.png" alt="QR code for downloading Smart Light Assistant" width="300" height="300" loading="lazy">
-                <p>Scan to download</p>
-            </div>
-            <div class="version-info">
-                <p>Version 1.0 • Compatible with iOS 18.5+</p>
-                <p>Universal app for iPhone and iPad</p>
+            <div class="download-content">
+                <h2 data-i18n="downloadTitle">立即下载 AI 智能补光</h2>
+                <p data-i18n="downloadSubtitle">把随身设备变成随身影棚。</p>
+                <div class="download-buttons">
+                    <a href="https://apps.apple.com/app/id6749024443" class="appstore-btn" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <span class="appstore-txt"><span class="small" data-i18n="downloadBtnSmall">Download on the</span><span class="big">App Store</span></span>
+                    </a>
+                </div>
+                <p class="download-note" data-i18n="downloadNote">需要 iOS 18.5 或更高版本 · iPhone 与 iPad 通用</p>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo"></div>
-                    <span class="brand-name">Smart Light Assistant</span>
-                    <p>Professional photography lighting tool</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#screenshots">Screenshots</a>
-                        <a href="https://apps.apple.com/app/id6749024443" target="_blank" rel="noopener noreferrer">Download</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="mailto:1597498880weiproduct@gmail.com">Contact Support</a>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear">2026</span> WeiProduct. All rights reserved.</p>
+                <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">智能补光师. 保留所有权利。</span></p>
+                <p data-i18n="footerMadeBy">Built by WeiProduct</p>
+                <p class="footer-legal">
+                    <a href="privacy.html" data-i18n="footerPrivacy">隐私政策</a>
+                    <a href="terms.html" data-i18n="footerTerms">服务条款</a>
+                    <a href="mailto:1597498880weiproduct@gmail.com" data-i18n="footerContact">联系我们</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-app">
+            <span class="brand-icon sm" aria-hidden="true"><svg viewBox="0 0 100 100" width="30" height="30"><rect width="100" height="100" rx="24" fill="url(#bg)"/><circle cx="50" cy="50" r="14" fill="#fff"/><g stroke="#fff" stroke-width="6" stroke-linecap="round"><path d="M50 15V27"/><path d="M50 73V85"/><path d="M15 50H27"/><path d="M73 50H85"/><path d="M25 25 33 33"/><path d="M67 67 75 75"/><path d="M75 25 67 33"/><path d="M33 67 25 75"/></g></svg></span>
+            <div class="sticky-txt"><strong data-i18n="navBrand">AI 智能补光</strong><span data-i18n="stickySub">AI 智能补光 · 免费</span></div>
+        </div>
+        <a href="https://apps.apple.com/app/id6749024443" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="stickyGet">获取</a>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
