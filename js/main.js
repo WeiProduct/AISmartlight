@@ -15,7 +15,30 @@ const I18N = {
     chipA: '🔆 屏幕补光', chipB: '🎬 拍照 · 录像',
     proofRating: '摄影与录像 · 实用工具',
     stat1: '原生体验', stat2: '本地隐私', stat3: '双语界面', stat4: '广告 · 追踪',
+    eyeHow: '流程', eyeWho: '场景', eyeFeatures: '功能', eyeDuo: '玩一玩', eyeShots: '截图', eyeTips: '技巧', eyeCompare: '对比', eyeFaq: '问答',
     howTitle: '三步打出好光', howSub: '选好场景，摆好设备，随手就拍。',
+    whoTitle: '谁在用它补光', whoSub: '四类创作者，同一块会发光的屏幕。',
+    who1Title: '主播与视频博主', who1Desc: '直播前一键“直播”场景，脸部光平整均匀。', who1Tag: 'AI 场景预设',
+    who2Title: '电商与二手卖家', who2Desc: '5000K 中性白，还原商品真实色彩。', who2Tag: '精准色温',
+    who3Title: '视频会议一族', who3Desc: '侧位一块屏，逆光会议室也有好气色。', who3Tag: '全屏补光',
+    who4Title: '美妆与手作创作者', who4Desc: '暖光试妆、冷光看细节，随时切换。', who4Tag: '色环与色温',
+    duoTitle: '一块屏幕，两种光', duoSub: '分屏双色模式，就在这页玩得到——点一下试试双色组合。', duoBadge: '分屏双色',
+    duoTopLabel: '上半屏', duoBottomLabel: '下半屏', duoComboLabel: '灵感组合',
+    duoCombo1: '赛博夜景', duoCombo2: '落日氛围', duoCombo3: '清晨',
+    tipsTitle: '布光小课堂', tipsSub: '五个随手可用的补光技巧，拍什么都更上镜。',
+    tip1Title: '45° 上方打光最讨喜', tip1Desc: '把补光屏摆在脸部斜上方 45°，眼神光自然、阴影柔和立体。',
+    tip2Title: '离得越近，光越柔', tip2Desc: '光源离主体越近、相对面积越大，阴影边缘就越柔和。',
+    tip3Title: '跟环境光对齐色温', tip3Desc: '台灯 ≈ 2700K，窗光 ≈ 6500K，对齐环境色温画面才干净。',
+    tip4Title: '旧 iPhone + iPad = 双灯位', tip4Desc: '一台当主光、一台勾轮廓，抽屉里的旧设备就是你的灯组。',
+    tip5Title: '直播用分屏双色', tip5Desc: '分屏双色一秒打出氛围背景，直播画面立刻有电影感。',
+    cmpTitle: '为什么智能补光胜过凑合的办法', cmpSub: '不吹数据，只比体验。',
+    cmpH0: '对比项', cmpH1: 'AI 智能补光', cmpH2: '开一张白图凑合', cmpH3: '传统环形灯',
+    cmpR1: '精准色温', cmpR1a: '2700–6500K 任意拨', cmpR1b: '全凭手感', cmpR1c: '固定色温，另购滤色片',
+    cmpR2: 'AI 场景预设', cmpR2a: '人像 / 产品 / 直播一键出光',
+    cmpR3: '分屏双色', cmpR3a: '一台设备双色布光', cmpR3c: '需要第二盏灯',
+    cmpR4: '边补光边拍', cmpR4a: '内置相机直接拍', cmpR4b: '要来回切 App', cmpR4c: '仍需另开相机',
+    cmpR5: '便携与成本', cmpR5a: '就在口袋里，零新增器材', cmpR5b: '同样随身，但仅此而已', cmpR5c: '额外器材，额外花费',
+    cmpR6: '隐私', cmpR6a: '100% 本地，无账号无追踪',
     step1Title: '选场景或让 AI 定光', step1Desc: '打开 App，选择人像 / 产品 / 直播场景与 AI 预设，或直接拨到精确色温。',
     step2Title: '把 iPhone 当补光灯', step2Desc: '把手机或 iPad 摆到需要补光的位置，整块屏幕即化为柔和均匀的光源。',
     step3Title: '实时预览并拍摄', step3Desc: '用内置相机边补光边预览，直接拍照片、Live Photo 或录像。',
@@ -39,6 +62,7 @@ const I18N = {
     downloadTitle: '立即下载 AI 智能补光', downloadSubtitle: '把随身设备变成随身影棚。', downloadNote: '需要 iOS 18.5 或更高版本 · iPhone 与 iPad 通用',
     footerRights: '智能补光师. 保留所有权利。', footerMadeBy: 'Built by WeiProduct',
     footerPrivacy: '隐私政策', footerTerms: '服务条款', footerContact: '联系我们',
+    ftProduct: '产品', ftSupport: '支持', ftAbout: '专注 AI 消费级应用的独立工作室。', ftTheme: '切换主题',
     stickySub: 'AI 智能补光 · 免费', stickyGet: '获取'
   },
   'en': {
@@ -56,7 +80,30 @@ const I18N = {
     chipA: '🔆 Screen fill light', chipB: '🎬 Photo · Video',
     proofRating: 'Photo & Video · Utilities',
     stat1: 'Native feel', stat2: 'Private', stat3: 'Bilingual', stat4: 'Ads · Tracking',
+    eyeHow: 'WORKFLOW', eyeWho: 'USE CASES', eyeFeatures: 'FEATURES', eyeDuo: 'PLAYGROUND', eyeShots: 'GALLERY', eyeTips: 'PLAYBOOK', eyeCompare: 'COMPARE', eyeFaq: 'FAQ',
     howTitle: 'Perfect light in three steps', howSub: 'Pick a scene, position your device, and shoot.',
+    whoTitle: 'Who lights with it', whoSub: 'Four kinds of creators, one glowing screen.',
+    who1Title: 'Streamers & vloggers', who1Desc: 'One tap on the Stream preset for even, flattering face light.', who1Tag: 'AI scene presets',
+    who2Title: 'Product sellers', who2Desc: 'Neutral 5000K keeps product colors true.', who2Tag: 'Precise Kelvin',
+    who3Title: 'Video-call professionals', who3Desc: 'A side fill that rescues you from backlit rooms.', who3Tag: 'Full-screen fill',
+    who4Title: 'Beauty & craft makers', who4Desc: 'Warm light to try makeup, cool light to check detail.', who4Tag: 'Color wheel & Kelvin',
+    duoTitle: 'Mix two lights on one screen', duoSub: 'The split-screen mode, live on this page — tap to try a duo.', duoBadge: 'Dual color',
+    duoTopLabel: 'Top half', duoBottomLabel: 'Bottom half', duoComboLabel: 'Combo ideas',
+    duoCombo1: 'Cyber night', duoCombo2: 'Sunset', duoCombo3: 'Fresh dawn',
+    tipsTitle: 'Lighting playbook', tipsSub: 'Five quick lighting tricks that make everything more photogenic.',
+    tip1Title: 'Light from 45° above', tip1Desc: 'Place the light 45° above eye level for natural catchlights and gentle, sculpted shadows.',
+    tip2Title: 'Closer light is softer light', tip2Desc: 'The closer — and relatively larger — the source, the softer the shadow edges.',
+    tip3Title: 'Match the room’s Kelvin', tip3Desc: 'Lamps ≈ 2700K, window daylight ≈ 6500K — match the ambient light for a clean frame.',
+    tip4Title: 'Old iPhone + iPad = two lights', tip4Desc: 'Use one as the key and one as a rim light — the spare devices in your drawer become a kit.',
+    tip5Title: 'Split-screen for streams', tip5Desc: 'Split-screen dual color builds an instant mood backdrop that makes streams feel cinematic.',
+    cmpTitle: 'Why a smart screen beats a makeshift light', cmpSub: 'No hype — just an honest side-by-side.',
+    cmpH0: 'Compared on', cmpH1: 'AI Smart Light', cmpH2: 'A blank white screen', cmpH3: 'A physical ring light',
+    cmpR1: 'Precise Kelvin', cmpR1a: 'Any value, 2700–6500K', cmpR1b: 'Pure guesswork', cmpR1c: 'Fixed temp; filters sold separately',
+    cmpR2: 'AI scene presets', cmpR2a: 'Portrait / Product / Stream in one tap',
+    cmpR3: 'Dual-color light', cmpR3a: 'Two tones from one device', cmpR3c: 'Needs a second light',
+    cmpR4: 'Shoot under the light', cmpR4a: 'Built-in camera, no app switching', cmpR4b: 'Constant app switching', cmpR4c: 'Still needs a separate camera',
+    cmpR5: 'Portability & cost', cmpR5a: 'Already in your pocket, zero extra gear', cmpR5b: 'In your pocket too — but that’s all', cmpR5c: 'Extra gear to buy and carry',
+    cmpR6: 'Privacy', cmpR6a: '100% on-device, no account, no tracking',
     step1Title: 'Pick a scene or let AI set the light', step1Desc: 'Open the app, choose a Portrait / Product / Stream scene and AI preset, or dial in an exact Kelvin.',
     step2Title: 'Use your iPhone as the fill light', step2Desc: 'Prop your iPhone or iPad where you need light — the whole screen becomes a soft, even glow.',
     step3Title: 'Preview and capture', step3Desc: 'Use the built-in camera to preview under the light and shoot Photos, Live Photos, or video.',
@@ -80,6 +127,7 @@ const I18N = {
     downloadTitle: 'Download AI Smart Light', downloadSubtitle: 'Turn the device in your pocket into a pocket studio.', downloadNote: 'Requires iOS 18.5 or later · Universal for iPhone & iPad',
     footerRights: 'AI Smart Light. All rights reserved.', footerMadeBy: 'Built by WeiProduct',
     footerPrivacy: 'Privacy Policy', footerTerms: 'Terms of Service', footerContact: 'Contact',
+    ftProduct: 'Product', ftSupport: 'Support', ftAbout: 'An indie studio crafting AI consumer apps.', ftTheme: 'Toggle theme',
     stickySub: 'AI fill light · Free', stickyGet: 'Get'
   }
 };
@@ -96,6 +144,8 @@ function applyLang(lang) {
   document.documentElement.lang = currentLang;
   const ls = document.getElementById('langSwitch');
   if (ls) ls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  const fl = document.getElementById('footLang');
+  if (fl) fl.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
   try { localStorage.setItem('lang', currentLang); } catch (e) {}
   updateLightScene();
 }
@@ -176,6 +226,54 @@ function initLightDemo() {
   updateLightScene();
 }
 
+// ===== Dual-color lab =====
+function initDuoDemo() {
+  const top = document.getElementById('duoTop');
+  const bottom = document.getElementById('duoBottom');
+  const seam = document.getElementById('duoSeam');
+  const stage = document.getElementById('duoStage');
+  if (!top || !bottom) return;
+  const state = { top: '#FFB25E', bottom: '#7FC4FF' };
+
+  function paint() {
+    top.style.background = state.top;
+    bottom.style.background = state.bottom;
+    if (seam) seam.style.background = 'linear-gradient(to bottom, ' + state.top + ', ' + state.bottom + ')';
+    if (stage) stage.style.boxShadow = 'var(--shadow-lg), 0 -18px 70px -14px ' + state.top + '66, 0 18px 70px -14px ' + state.bottom + '66';
+    document.querySelectorAll('.duo-swatch').forEach(sw => {
+      sw.classList.toggle('active', state[sw.getAttribute('data-half')] === sw.getAttribute('data-color'));
+    });
+    document.querySelectorAll('.duo-combo').forEach(cb => {
+      cb.classList.toggle('active', cb.getAttribute('data-top') === state.top && cb.getAttribute('data-bottom') === state.bottom);
+    });
+  }
+  document.querySelectorAll('.duo-swatch').forEach(sw => {
+    sw.addEventListener('click', () => {
+      state[sw.getAttribute('data-half')] = sw.getAttribute('data-color');
+      paint();
+    });
+  });
+  document.querySelectorAll('.duo-combo').forEach(cb => {
+    cb.addEventListener('click', () => {
+      state.top = cb.getAttribute('data-top');
+      state.bottom = cb.getAttribute('data-bottom');
+      paint();
+    });
+  });
+  paint();
+}
+
+// ===== Lighting playbook scroller =====
+function initTips() {
+  const track = document.getElementById('tipsTrack');
+  if (!track) return;
+  const step = () => (track.children[1] ? track.children[1].offsetLeft - track.children[0].offsetLeft : 320);
+  const prev = document.getElementById('tipsPrev');
+  const next = document.getElementById('tipsNext');
+  if (prev) prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+  if (next) next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+}
+
 // ===== Gallery =====
 function initGallery() {
   const track = document.getElementById('galTrack');
@@ -248,12 +346,18 @@ function initReveal() {
 function initScroll() {
   const nav = document.getElementById('navbar');
   const sticky = document.getElementById('stickyCta');
+  const prog = document.getElementById('scrollProgress');
   const onScroll = () => {
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (sticky) sticky.classList.toggle('show', y > 620);
+    if (prog) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
   onScroll();
 }
 
@@ -261,8 +365,10 @@ function initScroll() {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLightDemo();
+  initDuoDemo();
   initLang();
   initGallery();
+  initTips();
   initReveal();
   initScroll();
 
@@ -273,6 +379,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (ls) ls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
   const tt = document.getElementById('themeToggle');
   if (tt) tt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  const fl = document.getElementById('footLang');
+  if (fl) fl.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
+  const ft = document.getElementById('footTheme');
+  if (ft) ft.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function (e) {
